@@ -18,11 +18,8 @@
   --font-sans: var(--font-dm-sans);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Tailwind v4 preflight handles box-sizing, margin, padding resets.
+   Do NOT use unlayered * rules as they override Tailwind utility layers. */
 
 html {
   -webkit-font-smoothing: antialiased;
