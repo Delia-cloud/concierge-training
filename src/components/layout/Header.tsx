@@ -24,25 +24,27 @@ export default function Header({
       className="sticky top-0 z-50 px-4 pt-4 rounded-b-2xl shadow-md"
       style={{ background: "linear-gradient(135deg, #F5A623 0%, #E8960A 100%)" }}
     >
-      <div className="flex items-center gap-2.5 pb-3">
+      <div className="relative flex items-center justify-center pb-3.5">
         {onBack && (
           <button
             onClick={onBack}
-            className="w-8 h-8 rounded-lg bg-white/20 border-none text-white flex items-center justify-center text-base shrink-0"
+            className="absolute left-0 w-8 h-8 rounded-lg bg-white/20 border-none text-white flex items-center justify-center text-base shrink-0"
           >
             ←
           </button>
         )}
-        {icon && (
-          <div className="w-8 h-8 rounded-lg bg-white/25 flex items-center justify-center text-lg shrink-0">
-            {icon}
-          </div>
-        )}
-        <div>
-          <div className="text-[15px] font-bold text-white leading-tight">{title}</div>
-          {subtitle && (
-            <div className="text-[10px] text-white/80">{subtitle}</div>
+        <div className="flex items-center gap-2.5">
+          {icon && (
+            <div className="w-9 h-9 rounded-xl bg-white/25 flex items-center justify-center text-xl shrink-0">
+              {icon}
+            </div>
           )}
+          <div className="text-center">
+            <div className="text-[17px] font-bold text-white leading-tight">{title}</div>
+            {subtitle && (
+              <div className="text-[11px] text-white/90 font-medium">{subtitle}</div>
+            )}
+          </div>
         </div>
       </div>
       {tabs && tabs.length > 0 && (
