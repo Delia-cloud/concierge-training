@@ -20,7 +20,7 @@ export default function BottomNav() {
   };
 
   return (
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] bg-white border-t border-brand-border flex py-1.5 pb-[max(8px,env(safe-area-inset-bottom))] z-50">
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] sm:max-w-[540px] bg-white rounded-t-2xl flex py-2 pb-[max(10px,env(safe-area-inset-bottom))] z-50" style={{ boxShadow: "0 -2px 12px rgba(0,0,0,0.08)" }}>
       {NAV_ITEMS.map((item) => {
         const active = isActive(item.href);
         return (

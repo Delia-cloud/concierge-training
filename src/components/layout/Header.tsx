@@ -21,7 +21,7 @@ export default function Header({
 }: HeaderProps) {
   return (
     <div
-      className="sticky top-0 z-50 px-4 pt-3.5"
+      className="sticky top-0 z-50 px-4 pt-4 rounded-b-2xl shadow-md"
       style={{ background: "linear-gradient(135deg, #F5A623 0%, #E8960A 100%)" }}
     >
       <div className="flex items-center gap-2.5 pb-3">

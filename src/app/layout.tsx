@@ -27,8 +27,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} font-sans bg-brand-bg text-brand-text antialiased`}>
-        <div className="max-w-[480px] mx-auto bg-brand-bg min-h-screen relative">
+      <body className={`${dmSans.variable} font-sans bg-brand-bg text-brand-text antialiased sm:bg-[#E8E6E3]`}>
+        <div className="max-w-[480px] sm:max-w-[540px] mx-auto bg-brand-bg min-h-screen relative sm:shadow-xl sm:border-x sm:border-brand-border">
           {children}
         </div>
       </body>
