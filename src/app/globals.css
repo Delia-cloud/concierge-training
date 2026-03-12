@@ -24,10 +24,14 @@
   padding: 0;
 }
 
-html, body {
+html {
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  min-height: 100%;
+}
+body {
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100%;
 }
 
 ::-webkit-scrollbar {
