@@ -53,7 +53,7 @@ export default function SafeguardingPractice({ scenarios, onBack }: Props) {
   }
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <ProgressBar current={idx + 1} total={scenarios.length} color="#9C27B0" />
 
       <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-3.5">

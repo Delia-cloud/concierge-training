@@ -12,7 +12,7 @@ export default function PracticeClient({ modules }: Props) {
   return (
     <>
       <Header title="Concierge Training" subtitle="The Good Company People" icon="🎓" />
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <h2 className="text-[21px] font-bold text-[#2C3E50] mb-1">Practice Modules</h2>
         <p className="text-[13px] text-brand-text-light leading-relaxed mb-4">
           All six modules, any time. Each has a Learn tab and a Practice tab.
@@ -22,7 +22,7 @@ export default function PracticeClient({ modules }: Props) {
           <Link
             key={m.moduleId}
             href={`/practice/${m.moduleId}`}
-            className="w-full bg-white rounded-xl border border-brand-border p-3.5 text-left flex items-center gap-3 mb-2 no-underline"
+            className="w-full bg-white rounded-xl border border-brand-border p-4 text-left flex items-center gap-3 mb-3 no-underline"
           >
             <div
               className="w-[42px] h-[42px] rounded-[11px] border-[1.5px] flex items-center justify-center text-xl shrink-0"

@@ -64,7 +64,7 @@ export default function FeedbackLanding() {
 
   if (mode === "join") {
     return (
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <div className="bg-white rounded-xl border border-brand-border p-4 mb-4">
           <div className="text-[15px] font-bold text-brand-text mb-1">Join a Session</div>
           <p className="text-[13px] text-[#777] mb-4">Enter the code shared by your facilitator</p>
@@ -106,7 +106,7 @@ export default function FeedbackLanding() {
 
   if (mode === "create") {
     return (
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <div className="bg-white rounded-xl border border-brand-border p-4 mb-4">
           <div className="text-[15px] font-bold text-brand-text mb-1">Create a Session</div>
           <p className="text-[13px] text-[#777] mb-4">Start a new training feedback session</p>
@@ -147,7 +147,7 @@ export default function FeedbackLanding() {
   }
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <div className="text-center py-6">
         <div className="text-3xl mb-2">💬</div>
         <div className="text-[17px] font-bold text-brand-text mb-1">Training Feedback</div>

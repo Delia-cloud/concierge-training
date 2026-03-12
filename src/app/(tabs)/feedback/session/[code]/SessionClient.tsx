@@ -39,7 +39,7 @@ export default function SessionClient({ sessionCode, config, modules }: Props) {
   };
 
   return (
-    <div className="pb-24">
+    <div className="pb-32">
       {/* Session header */}
       <div className="bg-white border-b border-brand-border px-4 py-3">
         <div className="flex items-center justify-between mb-2">

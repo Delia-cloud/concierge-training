@@ -17,7 +17,7 @@ export default function LearnTab({ learnContent, tables, prompts, takeaways, sel
   const [ratings, setRatings] = useState<Record<number, number>>({});
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       {/* Key concepts */}
       <div className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-2">
         Key concepts &amp; principles

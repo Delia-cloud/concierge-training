@@ -37,7 +37,7 @@ export default function CirclesPractice({ scenarios, circles, onBack }: Props) {
   const correct = selected === sc.correctAnswer;
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <ProgressBar current={idx + 1} total={scenarios.length} color="#4CAF50" />
       <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-3.5">
         <div className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-1.5">

@@ -29,7 +29,7 @@ export default function NotesPractice({ noteModel, noteChecklist, onBack }: Prop
 
   if (phase === "compare") {
     return (
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-3.5">
           <div className="text-[13px] font-bold text-[#FF9800] mb-2">📝 Your Notes</div>
           <div className="bg-[#FFF8E1] rounded-lg p-3 text-[13px] text-[#444] leading-[1.65] whitespace-pre-wrap">
@@ -70,7 +70,7 @@ export default function NotesPractice({ noteModel, noteChecklist, onBack }: Prop
   }
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-3.5">
         <div className="text-[13px] font-bold text-[#FF9800] mb-2">📝 Scenario</div>
         <p className="text-[13px] text-[#444] leading-[1.65]">{scenario}</p>

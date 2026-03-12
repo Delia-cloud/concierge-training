@@ -27,7 +27,7 @@ export default function SwemwbsPractice({ questions, onBack }: Props) {
 
   if (phase === "intro") {
     return (
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-3">
           <div className="text-[15px] font-bold mb-2">Practise scoring SWEMWBS</div>
           <p className="text-[13px] text-brand-text-mid leading-[1.65] mb-2.5">
@@ -48,7 +48,7 @@ export default function SwemwbsPractice({ questions, onBack }: Props) {
     const q = questions[qIdx];
     const cur = answers[qIdx];
     return (
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <ProgressBar current={qIdx + 1} total={7} color="#2196F3" />
         <div className="italic text-xs text-brand-text-light mb-3">Over the past two weeks...</div>
         <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-4">
@@ -90,7 +90,7 @@ export default function SwemwbsPractice({ questions, onBack }: Props) {
   // Result phase
   const interp = interpret(metricScore || 0);
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-3">
         <div className="flex gap-4 items-center mb-4">
           <div className="flex-1 text-center">

@@ -19,24 +19,24 @@ export default function RoleClient({ sections }: Props) {
   return (
     <>
       <Header title="Concierge Training" subtitle="The Good Company People" icon="🎓" />
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <h2 className="text-[21px] font-bold text-[#2C3E50] mb-1">The Concierge Role</h2>
-        <p className="text-[13px] text-brand-text-light leading-relaxed mb-4">
+        <p className="text-[13px] text-brand-text-light leading-relaxed mb-5">
           What defines the role, our values, and the key messages that guide everything we do.
         </p>
 
         {sections.map((s) => (
-          <div key={s.sectionId}>
+          <div key={s.sectionId} className="mb-3">
             <button
               onClick={() => toggle(s.sectionId)}
-              className={`w-full rounded-xl px-3.5 py-3 text-left flex items-center gap-2.5 mb-2 transition-all ${
+              className={`w-full rounded-xl px-4 py-3.5 text-left flex items-center gap-3 transition-all ${
                 openSection === s.sectionId
                   ? "bg-[#FFF8ED] border-[1.5px] border-brand-orange"
                   : "bg-white border border-brand-border"
               }`}
             >
               <div
-                className={`w-9 h-9 rounded-[10px] flex items-center justify-center text-lg shrink-0 transition-all ${
+                className={`w-10 h-10 rounded-[10px] flex items-center justify-center text-lg shrink-0 transition-all ${
                   openSection === s.sectionId
                     ? "bg-brand-orange text-white"
                     : "bg-[#FFF8ED]"
@@ -45,8 +45,8 @@ export default function RoleClient({ sections }: Props) {
                 {s.icon}
               </div>
               <div className="flex-1">
-                <div className="text-sm font-semibold text-brand-text">{s.title}</div>
-                <div className="text-[11px] text-brand-text-light">{s.subtitle}</div>
+                <div className="text-[14px] font-semibold text-brand-text">{s.title}</div>
+                <div className="text-[11px] text-brand-text-light mt-0.5">{s.subtitle}</div>
               </div>
               <span
                 className="text-sm text-[#ccc] transition-transform"
@@ -59,7 +59,7 @@ export default function RoleClient({ sections }: Props) {
             </button>
 
             {openSection === s.sectionId && (
-              <div className="mb-3">
+              <div className="mt-2">
                 <RoleSectionContent section={s} />
               </div>
             )}

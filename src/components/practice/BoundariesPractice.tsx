@@ -34,7 +34,7 @@ export default function BoundariesPractice({ scenarios, onBack }: Props) {
   if (done) return <ScoreScreen score={score} total={scenarios.length} onBack={onBack} label="Boundaries Practice" />;
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <ProgressBar current={idx + 1} total={scenarios.length} color="#E91E63" />
       <div className="bg-white rounded-xl border border-brand-border p-3.5 mb-3.5">
         <div className="text-[13px] font-bold text-[#E91E63] mb-2">⚡ {sc.title}</div>

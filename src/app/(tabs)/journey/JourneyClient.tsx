@@ -15,7 +15,7 @@ export default function JourneyClient({ stages, modules }: Props) {
   return (
     <>
       <Header title="Concierge Training" subtitle="The Good Company People" icon="🎓" />
-      <div className="p-4 pb-24">
+      <div className="p-4 pb-32">
         <h2 className="text-[21px] font-bold text-[#2C3E50] mb-1">Your Training Journey</h2>
         <p className="text-[13px] text-brand-text-light leading-relaxed mb-4">
           Follow the stages as you progress — or jump to any module in Practice at any time.

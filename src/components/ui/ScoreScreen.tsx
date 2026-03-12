@@ -12,7 +12,7 @@ export default function ScoreScreen({ score, total, label, onBack }: ScoreScreen
   const great = pct >= 80;
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <div className="text-center pt-6 pb-8">
         <div
           className="w-24 h-24 rounded-full flex items-center justify-center flex-col mx-auto mb-4"

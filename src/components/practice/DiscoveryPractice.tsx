@@ -22,7 +22,7 @@ export default function DiscoveryPractice({ steps, onBack }: Props) {
 
   if (done) {
     return (
-      <div className="p-4 pb-24 text-center pt-6">
+      <div className="p-4 pb-32 text-center pt-6">
         <div className="text-5xl mb-3">🤝</div>
         <div className="text-lg font-bold mb-2">Discovery complete</div>
         <div className="text-[13px] text-[#777] leading-relaxed mb-6 max-w-[280px] mx-auto">
@@ -39,7 +39,7 @@ export default function DiscoveryPractice({ steps, onBack }: Props) {
   }
 
   return (
-    <div className="p-4 pb-24">
+    <div className="p-4 pb-32">
       <ProgressBar current={step.stepNumber} total={14} color="#F5A623" />
       <div className="flex items-center gap-2.5 mb-3.5">
         <div className="w-11 h-11 rounded-xl bg-[#FFF8ED] border-[1.5px] border-[#F5D89A] flex items-center justify-center text-[22px] shrink-0">
